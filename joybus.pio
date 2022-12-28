@@ -1,0 +1,22 @@
+.program joybus
+    set pins, 1
+    set pindirs, 1
+    out x, 8
+write_loop:
+    set pins, 0 [15]
+    out pins, 1 [31]
+    set pins, 1 [14]
+    jmp x--, write_loop
+
+    ; console stop bit (aka just a one)
+    set pins, 0 [15]
+    set pins, 1 [30]
+    set pindirs, 0
+
+read_loop:
+    wait 0 pin 0 [20] ; wait until somewhat into the next joybus cycle
+    in pins, 1
+    wait 1 pin 0
+    jmp read_loop
+
+.wrap

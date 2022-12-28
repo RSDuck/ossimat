@@ -1,0 +1,35 @@
+.define sel_gpio 6
+.define clk_gpio 7
+
+.program psxcontroller
+
+    ; wait for the falling edge of /sel
+    wait 1 gpio sel_gpio
+    wait 0 gpio sel_gpio
+
+byte_loop:
+    set x, 7
+bit_loop:
+    wait 0 gpio clk_gpio
+    out pins, 1
+    wait 1 gpio clk_gpio
+    in pins, 1
+    jmp x--, bit_loop
+
+    irq wait 0
+    nop [31]
+
+    out x, 8
+    jmp !x, done
+
+    set pindirs, 1
+    nop [20]
+    set pindirs, 2
+
+    jmp byte_loop
+
+done:
+    ; disable all output again
+    set pindirs, 0
+
+.wrap
