@@ -34,7 +34,7 @@ cd build
 cmake  ..
 ```
 
-## Questioning of the existance of this project
+## Questioning the existance of this project
 
 ### Why not just get a compatible dancing mat?
 
