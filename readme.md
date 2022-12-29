@@ -74,6 +74,10 @@ Would be cool, though there aren't many games which support the keyboard control
 
 Wink if you get it.
 
+## License
+
+Ossimat is released under GPLv2 or later.
+
 ## References
 
 Additionally to the ones already linked for pinouts, no$psx and https://sites.google.com/site/consoleprotocols/home/nintendo-joy-bus-documentation?authuser=0 were very helpful.
