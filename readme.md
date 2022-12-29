@@ -52,6 +52,12 @@ Because it's more fun this way.
 
 Yes.
 
+### Doesn't the Wii mat have two buttons less (in the bottom left and bottom right which press the triangle and square button)?
+
+Yes, but they seem to be not used by DDR.
+
+There is also a second one made for the game "Family Trainer". It has a very different layout.
+
 ## Planned features
 
 If I'll continue with this project it'll probably turn into an absolute kitchen sink, but here are some things planned:
@@ -62,7 +68,7 @@ I got Rollercoaster Tycoon for PSX and the official mice are pretty hard to find
 
 ### USB keyboard to GameCube keyboard
 
-You'd probably 
+Would be cool, though there aren't many games which support the keyboard controller.
 
 ## The name?
 
@@ -70,4 +76,4 @@ Wink if you get it.
 
 ## References
 
-Additionally
+Additionally to the ones already linked for pinouts, no$psx and https://sites.google.com/site/consoleprotocols/home/nintendo-joy-bus-documentation?authuser=0 were very helpful.
